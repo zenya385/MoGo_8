@@ -1,0 +1,56 @@
+:root {
+  --color-logo: #95e1d3;
+  --color-title: #333333;
+  --color-nav: #95e1d3;
+  --color-text: #b6b6b6;
+  --color-active: #f38181;
+  --color-bg: #ffffff;
+  --color-copywrite: #000000;
+}
+
+.header-logo {
+}
+.nav {
+}
+.nav-list {
+}
+.nav-item {
+}
+.nav-link {
+}
+.work {
+}
+.work-title {
+}
+.work-line {
+}
+.work-list {
+}
+.work-item {
+}
+.work-image {
+}
+.work-item-title {
+}
+.work-text {
+}
+.team {
+}
+.team-title {
+}
+.team-subtitle {
+}
+.team-line {
+}
+.team-subsription {
+}
+.team-list {
+}
+.team-item {
+}
+.team-image {
+}
+.team-item-title {
+}
+.team-text {
+}
