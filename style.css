@@ -116,7 +116,7 @@ body {
 .nav-link {
 }
 
-.nav-link:hover {
+.nav-item:hover {
   color: var(--color-active);
 }
 
@@ -237,8 +237,26 @@ body {
 .team-item {
   padding-bottom: 33px;
 }
-.team-item:hover {
+.team-img-wrap:hover .social-list {
+  /*7 ================== варіант 1 ===================== */
+  /* z-index: 5; */
+  /*7 ================== варіант 2 ===================== */
+  /* display: flex; */
+  /*7 ================== варіант 3 ===================== */
+  /* overflow */
+  /*7 ================== варіант 4 ===================== */
+  /* opacity: 1; */
+  /*7 ================== варіант 5 ===================== */
+  visibility: visible;
 }
+
+/*7 ================== варіант 3 ===================== */
+/* .team-item:hover .team-img-wrap {
+  overflow: visible;
+}
+.team-item:hover .social-list {
+  left: 68px;
+} */
 
 /* .team-item:hover .team-img-wrap::before {
   content: "";
@@ -255,13 +273,31 @@ body {
   );
 } */
 .team-image {
-  margin-bottom: 30px;
+}
+.team-image-subtext {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  background-color: #2f303a8f;
+  color: #ffffff;
 }
 .team-img-wrap {
   position: relative;
+  overflow: hidden;
 }
 
-/* .team-img-wrap:hover::before {
+.team-img-wrap:hover::before {
   content: "";
   display: block;
   position: absolute;
@@ -274,13 +310,14 @@ body {
     rgba(239, 139, 138, 0.8) 0%,
     rgba(229, 207, 130, 0.8) 100%
   );
-} */
+}
+
 .team-item-title {
   color: #333;
   font-size: 14px;
   font-weight: 400;
   font-variant: all-small-caps;
-  margin-bottom: 11px;
+  margin-top: 30px;
 }
 .team-text {
   color: #b6b6b6;
@@ -288,28 +325,45 @@ body {
   font-size: 15px;
   font-style: italic;
   font-weight: 300;
+  margin-bottom: 11px;
 }
 /*3 =============== sociale list ================ */
 
 .social-list {
+  position: absolute;
+  top: 196px;
+  left: 68px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1px;
+  gap: 2px;
+  /*7 ================== варіант 1 ===================== */
+  /* z-index: -5; */
+  /*7 ================== варіант 2 ===================== */
+  /* display: none; */
+  /*7 ================== варіант 3 ===================== */
+  /* overflow: hidden; */
+  /* left: -270px; */
+  /*7 ================== варіант 4 ===================== */
+  /* opacity: 0; */
+  /*7 ================== варіант 5 ===================== */
+  visibility: hidden;
 }
+
 .social-item {
   padding: 15px;
-  border: 1px solid #000;
+  background-color: #fce38a;
   /* border-radius: 50%; */
 }
 .social-item:hover {
-  background-color: #cd0a0a;
+  background-color: #95e1d3;
 }
 .social-link {
   display: block;
   margin: 0;
 }
 .social-svg {
+  fill: #f38181;
 }
 
 /*3 ==================== footer ================================ */
